@@ -1,3 +1,94 @@
+# 1.42.0
+
+- Grafieken en losse meetpunten zijn aanklikbaar en met het toetsenbord te openen.
+- Detailvenster met keuze van tijdlijnmomenten, oude en nieuwe waarde, verschil per onderdeel en vastgelegde wijzigingen.
+- Onderbouwing voor inwonertal, bezitswaarde, omzet, kosten en winst, inclusief reizen, overnachtingen en salarissen. Details worden pas bij openen berekend.
+
+# 1.41.0
+
+- Eén betalingstabel met vaste, even brede actieknoppen. Niet beschikbare acties blijven zichtbaar en zijn uitgeschakeld.
+- Eenmalige rekeningen worden per inwoner beheerd via Rekeningen; de losse tabel is verwijderd. Openstaande en betaalde rekeningen kunnen definitief worden verwijderd. Bij betaalde rekeningen blijft de uitgevoerde betaling in het kasboek en het saldo intact.
+- Historische berekeningen kopiëren niet langer de volledige kroniek met afbeeldingen en kasboek. Salarissen worden eenmaal per periode opgehaald en alleen bij veranderingen opgeslagen. Onnodige tussenversies van de betalingstabellen vervallen.
+
+# 1.40.1
+
+- Eenmalige aankooprekeningen staan bovenaan Betalingen, vóór de bankformulieren.
+- Openstaande aankooprekeningen tellen mee in het totaal per inwoner en kunnen samen met andere bedragen via Totaal ontvangen worden verwerkt. Bestaande rekeningen blijven bewaard; opnieuw aanmaken is niet nodig.
+
+# 1.40.0
+
+- Aanmaakformulier voor panden en percelen toont geregistreerde waarde en afzonderlijk aanpasbare aankoopprijs.
+- Gratis verstrekken zet de aankoopprijs op nul; Rekening aanmaken bepaalt of een openstaande rekening wordt aangemaakt. De bewaarknop toont het rekeningbedrag vóór bevestiging.
+- Een afwijkende aankoopprijs verandert de geregistreerde bezitswaarde niet. Annuleren maakt geen pand, perceel of rekening aan.
+
+# 1.39.0
+
+- Nieuwe percelen en bedrijfspanden kunnen via Doorzetten naar betalingen een eenmalige rekening krijgen. Uitvinken of een open rekening laten vervallen maakt gratis verstrekken mogelijk.
+- Inwonerskaarten openen een overzicht, met een potlood om te bewerken.
+- Spelers kunnen gedateerde salarisafspraken maken met een andere speler; betaling via de bank.
+- Reizen hebben vertrek- en terugkomstdatums. Overnachtingen worden per nacht berekend en vervallen tijdens reizen, ook bij vertrek of terugkomst midden in een periode. Betaalde periodes blijven behouden.
+
+# 1.38.0
+
+- Per NPC-werknemer een persoonlijk salaris bovenop de standaardkeuze uit Tarieven: vul het volledige bedrag in of laat leeg voor het standaardtarief. Eigenaren krijgen deze werknemersoptie niet.
+- Een salariswijziging vraagt een ingangsdatum en staat in de inwonerhistorie. Periodes worden bepaald door hun einddatum; reeds betaalde salarissen blijven bewaard.
+- Het persoonlijke loon rekent door in personeelskosten, openstaande salarissen en bankbetalingen, zonder het tarief, personeelsniveau of de opbrengstfactor te wijzigen.
+
+# 1.37.0
+
+- Alleen bankgeld wordt bijgehouden en meegeteld in rijkdom; storten en opnemen wijzigen uitsluitend de bankrekening. Bestaande contante bedragen en oude kasboekregels blijven bewaard voor compatibiliteit. Nieuwe salarissen verlopen via bank.
+- Betaaloverzichten tonen Uitgave / Inkomst met afzonderlijke status Openstaand / Betaald / Ontvangen.
+- Drie Kanselarij-thema’s gelijk verdeeld over de breedte. Lege sectie Huwelijk en akten verborgen.
+- Werkplek Op reis, met de bestaande registratie van ingangsdatum en historie.
+- Ontbrekende gegevens: overzicht voor inwoners, panden en percelen met directe aanvulknoppen en bevestiging van aanmaak- en aankomstdatums.
+
+# 1.36.0
+
+- Kanselarij verdeeld in Financiën, Eigendom en Burgerlijke Zaken met eigen onderdelen onder de campagnedatum.
+- Eigenaren, waarde, inwoners, gedateerde eigendomsoverdrachten en benoemingen hebben eigen overzichten.
+- Eigendomsakten, huwelijken, geboorten en overlijden openen hun eigen aktenregister.
+- Aanmaakdatum en historie bij pandkaarten en in het overzicht van panden en percelen.
+- Per regelprofiel instelbaar of de eigenaar kan meewerken; standaard alleen werkplaatsen.
+
+# 1.35.0
+
+- Verwijderde historieregels blijven verwijderd; de huidige gegevens worden niet opnieuw als zichtbare test-entry aangemaakt.
+- Historie opnieuw beginnen wist wijzigingsregels en gebruikt de huidige inwoners, panden en percelen als nieuwe uitgangssituatie. Tijdlijn, kaart, geld, betalingen, kasboek en akten blijven behouden. Bevestigingsvenster bevat een volledige backupdownload.
+- Campagnedatum zichtbaar in de Kanselarij.
+- Harptos-datumkiezer met dropdowns voor jaar en maand/feestdag en aanklikbare dagen per tenday.
+- Nieuwe tijdlijngebeurtenissen beginnen op de laatste tijdlijndatum. Alleen tijdlijngebeurtenissen mogen de campagnetijd vooruitzetten; andere datums zijn begrensd op de laatste tijdlijndatum, ook bij het opslaan van akten.
+- Ingetrokken akten worden na expliciete bevestiging definitief verwijderd, inclusief eerdere versies. Geen prullenbak of hersteloptie. Oude prullenbak-items kunnen in één keer definitief gewist worden. Aktenummers blijven gereserveerd.
+- Kaartuitbreiding en ongedaan maken houden de nieuwe onzichtbare historie-uitgangssituatie correct uitgelijnd.
+
+# 1.34.0
+
+- Eigen stadswapen of zegel uploaden onder Stadsinstellingen (PNG, JPG of WebP). Akten gebruiken dit beeld en niet meer automatisch het app-logo; zonder upload blijft de afbeelding weg.
+- Ingetrokken akten kunnen uit het register worden verwijderd. Via Status → Verwijderd zijn ze te herstellen; herstellen maakt ze niet opnieuw geldig. Aktenummers worden niet hergebruikt.
+- Personen tonen hun gekoppelde akten, aktenummers en huwelijkspartner. Akten zijn vanuit de persoonskaart en het inwonerformulier te bekijken en downloaden; beheer blijft in de Kanselarij.
+- Huwelijk registreren verwijderd uit het inwonerformulier. Het spelersoverzicht bevat eveneens de gekoppelde akten.
+- Kanselarij heeft afzonderlijke rijen voor de onderdelen, beheerknoppen en filters. Bij Akten staat de inwonerfilter bij de overige aktefilters.
+
+# 1.33.0
+
+- Nieuw register Kanselarij → Akten voor huwelijksakten, geboorteakten, overlijdensakten, eigendomsakten, vergunningen en bestuurlijke besluiten.
+- Huwelijken registreren tussen PC’s, NPC’s en handmatig ingevulde personen. Namen van buiten de stad maken geen nieuwe inwoner aan.
+- Geregistreerde huwelijken worden getoond op inwonerkaarten, in het inwonerformulier en in het persoonlijke spelersoverzicht.
+- Elke akte heeft een uniek nummer, datum, plaats, betrokkenen, uitgevende autoriteit en eigen toelichting. Datums vóór de campagne worden ondersteund.
+- Eigendomsakten kunnen panden en percelen bevatten, of handmatig omschreven eigendom buiten de stad. Opgeslagen namen, formaat en waarden blijven een momentopname.
+- Verzorgde akte met stadslogo, zegel en handtekeningregel; HTML downloaden en afdrukversie voor printen of opslaan als PDF.
+- Register met soort-, status-, inwoner- en zoekfilters. Wijzigingen bewaren voorgaande versies; intrekken bewaart de akte met reden.
+- Akten zijn onderdeel van de volledige kroniekbackup. Registratie verandert geld, eigendom of bevolkingsgegevens niet automatisch.
+
+# 1.32.0
+
+- Nieuw dorpslogo met kompasster in de zijbalk en als ingebouwd SVG-favicon, ook in de standalone versie.
+- Neutrale portrethouder voor inwoners zonder afbeelding, in ranglijst, kaarten, financiële tabel en portretformulier.
+- Werkplek kiezen in het inwonerformulier. Bij het invullen of wijzigen van woonplek, werkplek en gebouwkoppelingen wordt om de ingangsdatum gevraagd.
+- Gekozen datums worden vastgelegd in de historie en gebruikt voor historische berekeningen. Terugdateren behoudt andere latere wijzigingen.
+- Historie beperkt tot panden, percelen en inwoners. Geldmutaties maken geen nieuwe entiteithistorie aan; bestaande regels met uitsluitend geldwijzigingen worden daar niet meer getoond. Kasboek blijft behouden. Eigenaar- en kostenbepalende pandwijzigingen blijven zichtbaar.
+- Grafieken berekenen één historisch punt per unieke tijdlijndatum, met kalenderdatums en gebeurtenisnamen bij de punten.
+- Stadsinstellingen heeft een tandwiel dat ook in de ingeklapte zijbalk gecentreerd staat.
+
 # 1.31.1
 
 - Salaris betalen opent een pop-up met eigenaar, totaal, medewerkers en de keuze tussen bank en contant met beschikbaar saldo.
