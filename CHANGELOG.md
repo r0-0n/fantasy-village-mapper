@@ -1,3 +1,78 @@
+# 1.31.1
+
+- Salaris betalen opent een pop-up met eigenaar, totaal, medewerkers en de keuze tussen bank en contant met beschikbaar saldo.
+- De tabel toont alleen de compacte salarisknop; de betaalkeuze vergroot de rij niet meer.
+- Betaling wordt pas na bevestigen verwerkt. Annuleren wijzigt niets; onvoldoende saldo wordt in de pop-up gemeld.
+
+# 1.31.0
+
+- Geldbeheer samengebracht onder Kanselarij → Betalingen voor PC’s en NPC’s.
+- Contant storten op bank en opnemen van bank naar contant, met saldocontrole en één boeking in het kasboek. Het totale geldbedrag verandert niet.
+- Geld bijschrijven, afboeken en saldi corrigeren met omschrijving in hetzelfde formulier.
+- Geldvelden en geldmutatieformulier verwijderd uit het inwonerformulier. Bewerken van een inwoner behoudt bestaande saldi.
+- Kasboek toont bij storten en opnemen dat zowel bank als contant is verwerkt; verwijderen draait beide rekeningmutaties terug.
+
+# 1.30.0
+
+- Uitbetalingen hernoemd naar Betalingen.
+- Bij salaris betalen keuze tussen contant en bank, met beschikbaar saldo van de eigenaar in de keuzelijst.
+- Salaris gaat van de gekozen rekening van de eigenaar naar dezelfde rekening van de medewerker; onvoldoende saldo blokkeert de hele betaling zonder gedeeltelijke afschrijving.
+- Kasboek vermeldt de gekozen betaalwijze. Verwijderen draait de oorspronkelijke rekeningmutaties terug, met saldocontrole.
+- Bestaande contante salarisbetalingen en oudere gegevens blijven ondersteund.
+
+# 1.29.0
+
+- Portretten naast namen in het financiële inwoneroverzicht.
+- Aantal percelen los weergegeven van standaard grondmaateenheden voor prijsberekening: bijvoorbeeld 1 perceel met 61 vakjes. Grondwaarden blijven gelijk.
+- Kaartgereedschap als rustige horizontale werkbalk met consistente pictogrammen en gegroepeerde herstelknoppen. De kaart past in de resterende schermhoogte.
+- Inwonerkaarten groeien mee met de inhoud, zonder overlappende of afgekapte tekst.
+- Klik op pand- en perceelkaarten opent de instellingen; een afzonderlijk vizier opent de juiste positie op de stadskaart.
+- Pandkaarten en instellingen tonen eigenaar, medewerkers, bewoners en pandwaarde. Bewoners toewijzen werkt de woonplek bij.
+- Perceelkaarten en instellingen tonen formaat, eigenaar, panden en de daarbij horende bewoners en medewerkers, op basis van de daadwerkelijke kaartpositie.
+- Aaneengesloten terreinvlakken tekenen zonder lichte naden tussen rasterrijen.
+
+# 1.28.0
+
+- Kasboek met combineerbare dropdownfilters, zoekveld, sortering en export van de gefilterde selectie.
+- Inwoners sorteren en filteren; keuze uit lijst, kaarten en tabel.
+- Geldbeheer met direct bewerkbare saldi en één formulier voor bij- en afboekingen met omschrijving.
+- Woonplek verplicht met expliciete keuze voor automatisch verblijf; beroep en medewerkers duidelijk benoemd. DM-geheim uit formulieren verwijderd, bestaande gegevens behouden.
+- Panden en percelen openen de stadskaart op hun positie; bewerken blijft apart bereikbaar.
+- Kaart uitbreiden aan boven-, onder-, linker- en rechterkant met behoud van kaartlagen, eigendom, historie en ongedaan maken.
+- Kaartgereedschappen met zichtbare namen en afzonderlijke keuzes voor panden en percelen.
+
+# 1.27.0
+
+- Expliciete Automatisch-knop bij handmatig aangepaste pandbedragen.
+- Medewerker-potloodjes verwijderd uit pandentabel.
+- Compact sorteerbaar financieel inwoneroverzicht met bank, contant, panden, grond, rijkdom en openstaande bedragen.
+- Spelersoverzicht met datum, schulden/openstaande vorderingen en HTML-export naast Markdown, zonder DM-geheimen.
+- Bankoverschrijvingen en verwijderen uitsluitend via het kasboek; dubbele historietabel onder overschrijven verwijderd.
+
+# 1.26.1
+
+- Gebruiksvriendelijkheidscontrole: Locaties hernoemd naar Panden; pandlabels en formuliernamen gelijkgetrokken.
+- Stadsinstellingen klappen in zodra verplichte keuzes zijn ingevuld; plaatsnaam en kalender daar samengebracht. Dubbele bediening verwijderd.
+- Consistente prullenbak- en potloodiconen met toegankelijke namen en aanwijstekst.
+- Lord Protector herkenbaar met gouden kroon en rand.
+- Pandentabel met aparte uitgelijnde kolommen voor meewerkende eigenaar en medewerker; sortering op alle kolommen behouden.
+- Oude dubbele betaalteksten onder totalen verwijderd; Tarieven en historie gegroepeerd rechts.
+- Harptos-periodenaam ook correct in de bovenste statistieken.
+
+# 1.26.0
+
+- Uitklapbare stadsinstellingen: Lord Protector en overnachtingsgebouw kiezen; oranje melding bij ontbrekende keuzes.
+- Overnachtingen gebruiken het gekozen pand en betalen diens eigenaar, met bestaande The Crossroads Rest als standaard bij migratie.
+- Betalingsregels in persoonsoverzicht afzonderlijk laten vervallen, zonder opnieuw klaarzetten; uitgevoerde mutaties teruggedraaid.
+- Van/naar-bankoverschrijvingen tussen PC’s en NPC’s, kasboek en beide persoonlijke overzichten, met saldo-controle en terugdraaien.
+- Eén dag verder verwijderd; Tarieven naar rechts naast historie.
+
+# 1.25.2
+
+- Harptos-tendays tellen door over maandgrenzen vanaf de eerste tijdlijnmaand; 1 Eleasis opent de derde tenday van Flamerule.
+- Periodedatums houden rekening met feestdagen; bestaande Flamerule-betaalsleutels behouden.
+- Type / rol verborgen en niet verplicht voor kroniekentries; oude types blijven bewaard.
+
 # 1.25.1
 
 - Personagegegevens verwijderd uit inwonereditor; eerder ingevulde velden behouden bij bewaren.
