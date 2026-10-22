@@ -2,7 +2,7 @@
 
 Een webapp om een fantasiedorp te tekenen en te beheren, met gebouwen, inwoners, gildes en een campagnetijdlijn.
 
-Huidige versie: **1.42.0**. De actuele versie staat in `VERSION`; wijzigingen staan in `CHANGELOG.md`.
+Huidige versie: **1.42.1**. De actuele versie staat in `VERSION`; wijzigingen staan in `CHANGELOG.md`.
 
 ## Starten
 
@@ -44,16 +44,16 @@ Bij Tijdlijn → Kalender instellen kies je Harptos of de gewone kalender en de 
 ## Rijkdom en volgorde
 Met ↑ en ↓ wijzig je de volgorde van regelprofielen en personeelsniveaus. Inwoners staan op rijkdom: pandwaarden + gekochte extra grond + bank + contant. Bank en contant zijn handmatige saldi, los van geregistreerde uitbetalingen. Financiële inwonergegevens zijn alleen zichtbaar in DM-weergave. De datum bovenin toont de chronologisch laatste zichtbare gebeurtenis; zonder gebeurtenissen geldt de campagnedag.
 
-## Automatische plots en opslag (1.42.0)
+## Automatische plots en opslag (1.42.1)
 Plots in bezit = unieke vakjes van toegewezen percelen / vakken per plot (standaard 16). Fracties blijven behouden. Ook het eerste plot telt mee; alle plots worden naar verhouding gewaardeerd tegen de ingestelde prijsschijven, boven de laatste schijf geldt de laatste prijs. Oude handmatige aantallen worden behouden als historische gegevens maar niet meer gebruikt.
 Financiële invoer wordt tijdens geldig invoeren automatisch opgeslagen; bij verlaten van het veld wordt de weergave bijgewerkt. Overzicht sorteer je via keuzelijsten; panden via de kolomkoppen. Alle profielen gebruiken de factoren van personeel en meewerkende eigenaar, ook bestaande profielen; handmatige opbrengstoverrides blijven behouden.
 
-## Kaart en ranglijst (1.42.0)
+## Kaart en ranglijst (1.42.1)
 Inwoners staan onder elkaar, rijkste bovenaan. Klik op een rij om de inwoner te bewerken. De kaart past binnen het scherm. Zoom met +, − of het muiswiel. Verschuif met de knop Verschuiven, Shift-slepen of de middelste muisknop. Passend maken toont de hele kaart. Zoomen verandert de kaartgegevens en exports niet.
 
 Je kunt de kaart ook verschuiven door de rechtermuisknop ingedrukt te houden en te slepen.
 
-Vanaf 1.42.0 telt ook het eerste plot mee in de grondwaarde: 16 vakjes tegen het eerste plot-tarief (standaard 500 gp). Delen worden naar verhouding berekend.
+Vanaf 1.42.1 telt ook het eerste plot mee in de grondwaarde: 16 vakjes tegen het eerste plot-tarief (standaard 500 gp). Delen worden naar verhouding berekend.
 
 ## Overnachtingen
 Een inwoner zonder geldige toegewezen woonlocatie verblijft automatisch in The Crossroads Rest: 1 gp per nacht, 7 gp per week. De kosten worden meegenomen in het nettoresultaat. De herberg krijgt deze opbrengst bovenop de ingestelde pandopbrengst, ook bij een handmatige opbrengst. De eigenaar ontvangt die inkomsten via het pand. Een toegewezen woonlocatie beëindigt het automatische verblijf. Banksaldi veranderen niet automatisch; eerder klaargezette weekbedragen blijven behouden.
@@ -64,7 +64,7 @@ Onder Tarieven wijzig je het tarief per nacht. Bestaande weekmomentopnamen blijv
 ## Ontwikkeling van de stad
 Onder de Kanselarij-kop staan vijf grafieken. De eerste stand begint bij gebruik van deze versie. Iedere campagnedag heeft één stand; wijzigingen op dezelfde dag werken die stand bij. Eerdere dagstanden blijven bewaard in de kroniekback-up. De grafieken tonen de hele stad; omzet, winst en kosten zijn verwachte weekbedragen. Locaties tonen inwoners met een gekoppelde werkplek, de meewerkende eigenaar en het ingehuurde niveau zolang daar geen naam voor is geregistreerd.
 
-Vanaf 1.42.0 toont het persoonsoverzicht HTML; Export MD levert Markdown. Losse betalingen registreer je uitsluitend onder Uitbetalingen, met richting vanuit de Kanselarij (van inwoner ontvangen of aan inwoner betaald). De betaalhistorie blijft vanuit de inwoner weergegeven. Grafieken staan onder Overzicht.
+Vanaf 1.42.1 toont het persoonsoverzicht HTML; Export MD levert Markdown. Losse betalingen registreer je uitsluitend onder Uitbetalingen, met richting vanuit de Kanselarij (van inwoner ontvangen of aan inwoner betaald). De betaalhistorie blijft vanuit de inwoner weergegeven. Grafieken staan onder Overzicht.
 
 ## Medewerkers en ontvangen weekbedragen
 Personeel wordt aan een inwoner gekoppeld; zonder bestaande medewerker ontstaat een NPC met een voorlopige naam. Bewerk naam, leeftijd, ras, klas en omschrijving via Inwoners of de personeelscel. De NPC telt één keer mee en krijgt geen automatische herbergkosten. Negatieve weekresultaten zijn bedragen die de Kanselarij van de inwoner ontvangt; de ontvangst staat als gedane betaling in diens overzicht. Historische betaalde bedragen blijven behouden.
@@ -72,36 +72,44 @@ Personeel wordt aan een inwoner gekoppeld; zonder bestaande medewerker ontstaat 
 ## Automatisch medewerkersloon
 Vanaf de huidige campagneweek wordt het ingestelde personeelsloon eenmaal per week per pand als betaald geregistreerd voor de gekoppelde medewerker. Bij vooruitgaan worden overgeslagen weken vanaf de startweek verwerkt tegen de dan geldende personeelsinstellingen; historische gegevens van vóór deze functie worden niet verzonnen. Bestaande boekingen blijven behouden bij loonwijzigingen. De hoogste campagnedag of tijdlijndag bepaalt de week (zeven dagen). Uitbetalingen toont Medewerkersloon; het persoonsoverzicht/export bevat deze ontvangsten. De bestaande loonkosten blijven bij het pand; banksaldi worden nog steeds handmatig bijgehouden.
 
-Vanaf 1.42.0 bepaalt uitsluitend de hoogste campagnedag in de tijdlijn de betaalweek: dag 1–7 is week 1, dag 8–14 week 2. Salarissen worden vanaf week 1 tot die week verwerkt; geselecteerde inwonerbetalingen worden klaargezet. Ontbrekende oude weken gebruiken huidige tarieven. Bestaande betalingen blijven behouden, ook bij terugzetten of verwijderen van een tijdlijnentry. Zonder entries worden geen automatische nieuwe weken gemaakt.
+Vanaf 1.42.1 bepaalt uitsluitend de hoogste campagnedag in de tijdlijn de betaalweek: dag 1–7 is week 1, dag 8–14 week 2. Salarissen worden vanaf week 1 tot die week verwerkt; geselecteerde inwonerbetalingen worden klaargezet. Ontbrekende oude weken gebruiken huidige tarieven. Bestaande betalingen blijven behouden, ook bij terugzetten of verwijderen van een tijdlijnentry. Zonder entries worden geen automatische nieuwe weken gemaakt.
 
-Vanaf 1.42.0 zijn alleen volledig verstreken weken beschikbaar. De datum van de laatste tijdlijnentry, vertaald naar de ingestelde Harptos-startdatum, bepaalt verstreken dagen: dag 8 opent week 1, dag 15 week 2. De lopende week is uitgesloten.
+Vanaf 1.42.1 zijn alleen volledig verstreken weken beschikbaar. De datum van de laatste tijdlijnentry, vertaald naar de ingestelde Harptos-startdatum, bepaalt verstreken dagen: dag 8 opent week 1, dag 15 week 2. De lopende week is uitgesloten.
 
 ## Ingangsdatums en historie
 Kanselarij → Ingangsdatums & historie toont aanmaak en wijzigingen van panden, inwoners en percelen. Bestaande gegevens hebben een voorlopige datum dag 1, expliciet te controleren. Nieuwe wijzigingen gebruiken de laatste tijdlijndatum; datums zijn achteraf instelbaar. Weekbetalingen gebruiken de situatie op dag 7, 14 enzovoort, zonder verdeling binnen de week. Reeds geboekte bedragen blijven behouden; historische tariefwijzigingen vóór deze versie zijn niet bekend.
 
-Bij Harptos geldt vanaf 1.42.0 een tenday van 10 campagnedagen: dag 11 opent periode 1, dag 21 periode 2. De gewone kalender blijft 7 dagen gebruiken. Ingestelde opbrengsten en personeelslonen gelden per gekozen periode; overnachtingen blijven per nacht. Bestaande boekingen blijven behouden.
+Bij Harptos geldt vanaf 1.42.1 een tenday van 10 campagnedagen: dag 11 opent periode 1, dag 21 periode 2. De gewone kalender blijft 7 dagen gebruiken. Ingestelde opbrengsten en personeelslonen gelden per gekozen periode; overnachtingen blijven per nacht. Bestaande boekingen blijven behouden.
 
-NPC-loon wordt vanaf 1.42.0 contant verwerkt. Betaalde, zichtbare periodes zonder verwerkingsmarkering tellen eenmaal bij contant geld op. Datums wijzig je bij Inwoners/Locaties → Ingangsdatums & historie, of met de datumknop in een bewerkvenster. Klik vervolgens op de datum in de historie.
+NPC-loon wordt vanaf 1.42.1 contant verwerkt. Betaalde, zichtbare periodes zonder verwerkingsmarkering tellen eenmaal bij contant geld op. Datums wijzig je bij Inwoners/Locaties → Ingangsdatums & historie, of met de datumknop in een bewerkvenster. Klik vervolgens op de datum in de historie.
 
-Vanaf 1.42.0 betaal je medewerkers handmatig bij Uitbetalingen → Medewerkersloon → Eigenaar betaalt contant. De eigenaar moet voldoende contant geld hebben. De betaling trekt contant geld van de eigenaar af en telt het bij de medewerker op. Eerdere betaalde records worden niet teruggedraaid. De historie noemt gewijzigde velden met oude en nieuwe waarden.
+Vanaf 1.42.1 betaal je medewerkers handmatig bij Uitbetalingen → Medewerkersloon → Eigenaar betaalt contant. De eigenaar moet voldoende contant geld hebben. De betaling trekt contant geld van de eigenaar af en telt het bij de medewerker op. Eerdere betaalde records worden niet teruggedraaid. De historie noemt gewijzigde velden met oude en nieuwe waarden.
 
-## Stadsinstellingen en overschrijvingen (1.42.0)
+## Stadsinstellingen en overschrijvingen (1.42.1)
 Links bij Stadsinstellingen kies je een Lord Protector (Burgemeester) en het gebouw voor automatische overnachtingen. Beide kunnen later naar een PC en diens pand worden gewijzigd. De eigenaar van het geselecteerde pand ontvangt het overnachtingsgeld. Zonder gekozen gebouw worden geen nieuwe automatische overnachtingskosten berekend; al geboekte bedragen blijven behouden.
 Onder Uitbetalingen staat Bankoverschrijving met Van, Naar, bedrag en omschrijving. Alle inwoners, ook NPC’s, kunnen geld overmaken. De bankmutatie staat in het kasboek en beide persoonlijke overzichten. Verwijderen uit het kasboek draait beide saldi terug. In het persoonsoverzicht kun je een onterechte betalingsverplichting verwijderen; die wordt niet opnieuw klaargezet. Er wordt een bevestiging gevraagd voordat een uitgevoerde betaling wordt teruggedraaid.
 
-## Bediening (1.42.0)
+## Bediening (1.42.1)
 Panden is de nieuwe naam van Locaties. Plaatsnaam en kalender vind je onder Stadsinstellingen. De verplichte keuzes blijven Lord Protector en overnachtingsgebouw; zodra beide ingevuld zijn klapt het blok na een wijziging in. Je kunt het daarna opnieuw openen. Kaartinstellingen blijven bij de kaart; financiële tarieven blijven rechts in de Kanselarij. Prullenbakken verwijderen en potloodjes wijzigen; bij aanwijzen staat de volledige actie, ook beschikbaar voor schermlezers. De Lord Protector heeft een gouden kroon.
 
-## Financiële status (1.42.0)
+## Financiële status (1.42.1)
 Overzicht toont per inwoner bank, contant, panden, grond, rijkdom, te betalen en te ontvangen. Klik op een kolomkop om te sorteren, of gebruik de keuzelijsten. Openstaande bedragen omvatten geregistreerde, niet betaalde periodes en salarissen; toekomstige en vervallen regels tellen niet mee. Rijkdom toont bezittingen plus saldi, los van deze nog openstaande bedragen.
 Via Bekijken / exporteren krijg je de actuele spelerstatus met openstaande bedragen. Markdown en een zelfstandige afdrukbare HTML-export zijn beschikbaar, zonder DM-geheimen of wijzigingsknoppen. Geld overmaken doe je bij Uitbetalingen; historie en verwijderen vind je bij Kasboek. Verwijderen draait uitgevoerde geldmutaties terug na saldocontrole. In de pandentabel herstelt Automatisch de berekening van alleen het betreffende handmatig aangepaste veld.
 
-Versie 1.42.0: horizontale kaartwerkbalk, flexibele inwonerkaarten, portretten en echte perceelaantallen in het financiële overzicht. Pand- en perceelkaarten openen instellingen; het vizier gaat naar de kaartpositie. Panden tonen eigenaar, medewerkers, bewoners en waarde; percelen tonen ook welke panden er geheel of gedeeltelijk op staan. Grondprijzen blijven op dezelfde standaardmaat berekend.
+Versie 1.42.1: horizontale kaartwerkbalk, flexibele inwonerkaarten, portretten en echte perceelaantallen in het financiële overzicht. Pand- en perceelkaarten openen instellingen; het vizier gaat naar de kaartpositie. Panden tonen eigenaar, medewerkers, bewoners en waarde; percelen tonen ook welke panden er geheel of gedeeltelijk op staan. Grondprijzen blijven op dezelfde standaardmaat berekend.
 
-Versie 1.42.0 voegt een ingebouwd SVG-logo/favicon, portrethouders en een werkplekveld toe. Woon-, werk- en eigendomskoppelingen vragen om een ingangsdatum. Historie bevat entiteitwijzigingen; geldmutaties staan in het kasboek. Grafieken volgen de unieke tijdlijndatums en berekenen daarvoor de historische situatie.
+Versie 1.42.1 voegt een ingebouwd SVG-logo/favicon, portrethouders en een werkplekveld toe. Woon-, werk- en eigendomskoppelingen vragen om een ingangsdatum. Historie bevat entiteitwijzigingen; geldmutaties staan in het kasboek. Grafieken volgen de unieke tijdlijndatums en berekenen daarvoor de historische situatie.
 
-Versie 1.42.0: onder Kanselarij → Akten maak je zes soorten akten. Kies een PC/NPC of vul een externe naam in; dat maakt geen inwoner aan. Een huwelijk verschijnt bij de gekoppelde inwoners. Akten bewaren namen, datum, autoriteit en geselecteerd eigendom als momentopname. Download de HTML of open Afdrukversie / PDF en kies in de browser voor afdrukken of opslaan als PDF. De volledige kroniekexport bevat het aktenregister. Geld, eigendom en inwonerstatus veranderen niet automatisch door een akte.
+Versie 1.42.1: onder Kanselarij → Akten maak je zes soorten akten. Kies een PC/NPC of vul een externe naam in; dat maakt geen inwoner aan. Een huwelijk verschijnt bij de gekoppelde inwoners. Akten bewaren namen, datum, autoriteit en geselecteerd eigendom als momentopname. Download de HTML of open Afdrukversie / PDF en kies in de browser voor afdrukken of opslaan als PDF. De volledige kroniekexport bevat het aktenregister. Geld, eigendom en inwonerstatus veranderen niet automatisch door een akte.
 
-Versie 1.42.0: upload een eigen stadswapen of zegel onder Stadsinstellingen. Dit wordt gebruikt bij het genereren van akten; het app-logo blijft apart. Ingetrokken akten kunnen worden verwijderd en via het statusfilter worden hersteld als ingetrokken akte. Bij personen staan partner en gekoppelde akten; registreren en beheren gebeurt in de Kanselarij.
+Versie 1.42.1: upload een eigen stadswapen of zegel onder Stadsinstellingen. Dit wordt gebruikt bij het genereren van akten; het app-logo blijft apart. Ingetrokken akten kunnen worden verwijderd en via het statusfilter worden hersteld als ingetrokken akte. Bij personen staan partner en gekoppelde akten; registreren en beheren gebeurt in de Kanselarij.
 
-Versie 1.42.0: Harptos-datumkiezer met dagenraster. Alleen de tijdlijn kan vooruit; andere registraties zijn begrensd op de huidige campagnedatum. Historie opnieuw beginnen behoudt de huidige stad, geld en administratie, maar wist de wijzigingshistorie en gebruikt de huidige situatie als uitgangspunt voor vroegere berekeningen. Maak zo nodig eerst de aangeboden backup. Akten verwijderen is definitief; de eerdere prullenbak kan via de aparte opruimknop definitief worden gewist.
+Versie 1.42.1: Harptos-datumkiezer met dagenraster. Alleen de tijdlijn kan vooruit; andere registraties zijn begrensd op de huidige campagnedatum. Historie opnieuw beginnen behoudt de huidige stad, geld en administratie, maar wist de wijzigingshistorie en gebruikt de huidige situatie als uitgangspunt voor vroegere berekeningen. Maak zo nodig eerst de aangeboden backup. Akten verwijderen is definitief; de eerdere prullenbak kan via de aparte opruimknop definitief worden gewist.
+
+## Broncode onderhouden
+
+De broncode staat in `src/`. `src/INDEX.md` verwijst per functie naar het juiste bestand en regelnummer. De volgorde staat in `src/manifest.json`; gedeelde functies blijven in één browserscript draaien, zonder extra netwerkverzoeken of bibliotheken.
+
+In de ontwikkelmap: `python3 work/build.py` bouwt de distributie en functie-index; `python3 work/test.py` draait de actuele controles; `python3 work/package.py` maakt HTML en ZIP. Voor de tests is Node.js nodig (eventueel instellen met `NODE`). In de ZIP is de broncode meegeleverd; opnieuw bouwen kan daar met `python3 tools/build.py`.
+
+De browser blijft `dist/` gebruiken. Voor normaal gebruik is geen bouwstap nodig. De losse HTML blijft zelfstandig bruikbaar.

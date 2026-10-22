@@ -1,3 +1,11 @@
+# Wijzigingen
+
+## 1.42.1
+
+- Broncode opgesplitst in kleinere bestanden met een functie-index en reproduceerbare bouwstap.
+- Knopiconen controleren alleen het gewijzigde schermdeel; tijdlijnpunten worden in één doorgang gegroepeerd.
+- Oude ontwikkelscripts gebundeld in een apart archief. Actuele regressiecontroles zijn met één opdracht uit te voeren.
+
 # 1.42.0
 
 - Grafieken en losse meetpunten zijn aanklikbaar en met het toetsenbord te openen.

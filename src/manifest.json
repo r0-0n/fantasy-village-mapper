@@ -1,0 +1,14 @@
+[
+  "01-core-map.js",
+  "02-economy.js",
+  "03-residents-payments.js",
+  "04-payroll-history.js",
+  "05-resident-editor.js",
+  "06-money-map.js",
+  "07-civil-register.js",
+  "08-dated-records.js",
+  "09-chancellery.js",
+  "10-personal-wages.js",
+  "11-travel-acquisitions.js",
+  "12-invoices-charts.js"
+]
